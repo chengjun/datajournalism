@@ -466,7 +466,7 @@ display: none;
 #zoom {
 	z-index:999;
 	position: fixed;
-	left: 45%;
+	left: 5%;
 	bottom: 25px;
 	margin:0 auto;
 	padding: 0;
