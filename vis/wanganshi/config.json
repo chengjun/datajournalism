@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "chengjun",
+    "file": "http://chengjun.github.io/favicon.ico",
+    "link": "chengjun.github.io"
+  },
+  "text": {
+    "title": "王安石的社会网络",
+    "more": "王安石（1021年12月18日－1086年5月21日），字介甫，号半山，汉族，临川（今江西抚州市临川区）人，北宋著名的思想家、政治家、文学家、改革家。庆历二年（1042年），王安石进士及第。历任扬州签判、鄞县知县、舒州通判等职，政绩显著。熙宁二年（1069年），任参知政事，次年拜相，主持变法。因守旧派反对，熙宁七年（1074年）罢相。一年后，宋神宗再次起用，旋又罢相，退居江宁。元祐元年（1086年），保守派得势，新法皆废，郁然病逝于钟山（今江苏南京），谥号“文”，故世称王文公。",
+    "intro": "王安石庆历二年（1042年）进士及第，历任扬州签判、鄞县知县、舒州通判等职，政绩显著。熙宁二年（1069年），任参知政事，次年拜相，主持变法。因守旧派反对，熙宁七年（1074年）罢相。一年后，宋神宗再次起用，旋又罢相，退居江宁。元祐元年（1086年），保守派得势，新法皆废，郁然病逝于钟山（今江苏南京），谥号“文”，故世称王文公。数据来源于：China Biographical Database Project (CBDB)"
+  },
+  "legend": {
+    "edgeLabel": "社会关系",
+    "colorLabel": "权重",
+    "nodeLabel": "人物"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "Modularity Class",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": "Label",
+    "groupByEdgeDirection": true
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
