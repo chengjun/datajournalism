@@ -34,7 +34,9 @@ var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
 
 var y = d3.scale.linear()
-    .rangeRound([height, 0]);
+    .rangeRound([0, height]);
+    //.attr('y', function(d) { return y(d.percent); } )；
+    //.attr('height', function(d,i){ return height - y(d.percent); });
 
 var color = d3.scale.ordinal()
     .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
