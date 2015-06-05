@@ -1,3 +1,9 @@
-# datajournalism
+#数据新闻
 
-[王安石的社会网络 ](http://chengjun.github.io/datajournalism/vis/wanganshi/)
+
+#书目
+[书目](http://www.douban.com/doulist/38995052/)
+
+#可视化
+
+#编程
