@@ -1,0 +1,97 @@
+﻿<!DCOTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>echarts testing page</title>
+		<script src="./js/esl.js"></script>
+		<script src="./js/echarts.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="main" style="height:400px;"></div>
+		<script type="text/javascript">
+			require.config({
+				paths:{
+					"echarts":"js/echarts",
+					"echarts/chart/chord":"js/chord"
+				}
+			});
+			
+			//using
+			require(
+				[
+					"echarts",
+					"echarts/chart/chord"
+				],
+				function(ec){
+					var myChart=ec.init(document.getElementById("main"));  
+                    <!--Input your code here-->					
+					option = {
+							title : {
+								text: ' 进出口数据',
+								subtext: 'From d3.js',
+								x:'right',
+								y:'bottom'
+							},
+							tooltip : {
+								trigger: 'item',
+								formatter: function (params) {
+									if (params.indicator2) { // is edge
+										return params.value.weight;
+									} else {// is node
+										return params.name
+									}
+								}
+							},
+							toolbox: {
+								show : true,
+								feature : {
+									mark:{show:true},
+									restore : {show: true},
+									magicType: {show: true, type: ['force', 'chord']},
+									saveAsImage : {show: true}
+								}
+							},
+							legend: {
+								x: 'left',
+								data:['国家1','国家2', '国家3', '国家4','国家5']
+							},
+							series : [
+								{
+									type:'chord',
+									sort : 'ascending',
+									sortSub : 'descending',
+									showScale : true,
+									showScaleText : true,
+									data : [
+										{"name":"国家1"},
+										{"name":"国家2"},
+										{"name":"国家3"},
+										{"name":"国家4"},
+										{"name":"国家5"}
+									],
+									itemStyle : {
+										normal : {
+											label : {
+												show : false
+											}
+										}
+									},
+									matrix : [
+										[0,54600,109709,117213,139226],
+										[125026,0,148155,137982,166905],
+										[31699,79338,0,63804,182374],
+										[6972,60771,170248,0,20788],
+										[198606,129080,173142,11470,0]
+
+									]
+								}
+							]
+						};
+                    <!--Input your code here-->					
+					//loading data
+					myChart.setOption(option);
+				}
+			);
+		</script>
+	</body>
+</html>
